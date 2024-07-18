@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Container, Row } from "react-bootstrap";
+import { AiOutlineDownload } from "react-icons/ai";
 
 import myCVpdf from "../../assets/NguyenHoangVi_CV.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
@@ -7,10 +8,11 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-	"pdfjs-dist/build/pdf.worker.min.mjs",
-	import.meta.url,
-).toString();
+// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+// 	"pdfjs-dist/build/pdf.worker.min.mjs",
+// 	import.meta.url,
+// ).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/legacy/build/pdf.worker.min.mjs`;
 
 const Resume = () => {
 	return (
@@ -23,7 +25,7 @@ const Resume = () => {
 						target="_blank"
 						style={{ maxWidth: "250px" }}
 					>
-						{/* <AiOutlineDownload /> */}
+						<AiOutlineDownload />
 						&nbsp;Download CV
 					</Button>
 				</Row>
@@ -51,7 +53,7 @@ const Resume = () => {
 						target="_blank"
 						style={{ maxWidth: "250px" }}
 					>
-						{/* <AiOutlineDownload /> */}
+						<AiOutlineDownload />
 						&nbsp;Download CV
 					</Button>
 				</Row>
