@@ -11,8 +11,8 @@ const InfoCard = () => {
 						<span className="pink">Nguyen Hoang Vi </span>
 						from <span className="pink"> Bac Lieu, Viet Nam.</span>
 						<br />
-						I am currently employed as a software developer at
-						Juspay.
+						I'm currently unemployed and looking for a new job{" "}
+						{":))"}
 						<br />
 						<br />
 						Apart from coding, some other activities that I love to
@@ -22,6 +22,9 @@ const InfoCard = () => {
 					<ul>
 						<li className="about-activity">
 							<ImPointRight /> Playing Games
+						</li>
+						<li className="about-activity">
+							<ImPointRight /> Watching Movie
 						</li>
 						<li className="about-activity">
 							<ImPointRight /> Playing Sports
